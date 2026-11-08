@@ -1,0 +1,24 @@
+[project]
+name = "week-long-nlp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "lewisnjue", email = "njue.prime@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "nltk>=3.10.4",
+    "pandas>=3.1.1",
+    "spacy>=3.8.18",
+    "textblob>=0.20.1",
+]
+
+[project.scripts]
+week-long-nlp = "week_long_nlp:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
